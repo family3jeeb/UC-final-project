@@ -1,0 +1,168 @@
+
+  body{
+    background: linear-gradient(#2b1055,#7597de);
+    margin: 90px;
+    padding: 40px;
+    box-sizing: border-box;
+    min-height: 80.8vh;
+    font-family: 'poppins', sans-serif;  
+    display: flex;
+    justify-content: center;
+  }
+  
+ 
+  
+  h1{
+    text-align: center;
+  }
+  
+  .title {
+    color: rgb(92, 91, 91);
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95.8%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    }
+    
+    header .logo{
+        color: rgb(255, 255, 255);
+        font-weight: 700px;
+        text-decoration: none;
+        font-size: 2.4em;
+        text-transform: uppercase;
+        letter-spacing: 5px;   
+    }
+    
+    header ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    
+    header ul li{
+        list-style: none;
+        margin-left: 20px;
+        border-radius: 20px;
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        padding: 6px 30px;
+        color: #fff;
+        border-radius: 40px;
+    }
+    
+    header ul li a:hover,
+    header ul li a.active{
+        background-color: #fff;
+        color: #2b1055;
+    }
+  
+   
+     .main{
+     
+      margin-top: 26vh;
+     }
+     
+     .card{
+          width: 20%;
+          height: 400px;
+          display: inline-block;
+          box-shadow: 2px 2px 20px black;
+          border-radius: 5px; 
+          margin: 3%;
+         }
+         .image{
+            height: 200px;
+  
+         }
+  
+     .image img{
+       width: 100%;
+       height: 100%;
+       border-top-right-radius: 5px;
+       border-top-left-radius: 5px;
+       
+     
+      
+      }
+     
+     
+     .title{
+      
+       text-align: center;
+       padding: 10px;
+       
+      }
+     
+     h1{
+       font-size: 20px;
+       color: #fff;
+      }
+  
+     p{
+      color: #fff;
+     }
+     
+     .des{
+       padding: 3px;
+       text-align: center;
+      
+       padding-top: 10px;
+             border-bottom-right-radius: 5px;
+       border-bottom-left-radius: 5px;
+     }
+     button{
+       margin-top: 40px;
+       margin-bottom: 10px;
+       background-color: white;
+       border: 1px solid black;
+       border-radius: 20px;
+       padding:14px;
+     }
+  
+     button:hover{
+       background-color: black;
+       color: white;
+       transition: .5s;
+       cursor: pointer;
+     }
+     body::-webkit-scrollbar {
+      width: 9px;               /* width of the entire scrollbar */
+    }
+    
+    body::-webkit-scrollbar-track {
+      background: #896db8;        /* color of the tracking area */
+    }
+    
+    body::-webkit-scrollbar-thumb {
+      background-color: #2b1055;    /* color of the scroll thumb */
+      border-radius: 60px;       /* roundness of the scroll thumb */
+      border: 9px solid #2b1055;  /* creates padding around scroll thumb */
+    }
+  

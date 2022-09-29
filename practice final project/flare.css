@@ -1,0 +1,244 @@
+body{
+  background: linear-gradient(#2b1055,#7597de);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 200vh;
+  font-family: 'poppins', sans-serif;  
+
+}
+
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95.8%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    }
+    
+    header .logo{
+        color: rgb(255, 255, 255);
+        font-weight: 700px;
+        text-decoration: none;
+        font-size: 2.4em;
+        text-transform: uppercase;
+        letter-spacing: 2px;   
+    }
+    
+    header ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    
+    header ul li{
+        list-style: none;
+        margin-left: 20px;
+        border-radius: 20px;
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        padding: 6px 30px;
+        color: #fff;
+        border-radius: 40px;
+    }
+    
+    header ul li a:hover,
+    header ul li a.active{
+        background-color: #fff;
+        color: #2b1055;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    margin-top: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    
+  }
+
+  .bigPic{
+    height: 600px;
+    
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 11.1%;
+    
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    height: 100px;
+    
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+  
+ /* Style all font awesome icons */
+.fa {
+  margin-top: 60px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .contact{
+    display: flex;
+    justify-content: space-between;
+   margin-top: 180px;
+   padding: 50px;
+    color: rgba(71, 108, 141, 0);
+    background-color: rgba(255, 255, 255, 0.432);
+    
+    
+  }
+
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-left: 200px;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  body::-webkit-scrollbar {
+    width: 9px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #896db8;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #2b1055;    /* color of the scroll thumb */
+    border-radius: 60px;       /* roundness of the scroll thumb */
+    border: 9px solid #2b1055;  /* creates padding around scroll thumb */
+  }
+
+ 

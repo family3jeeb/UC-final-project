@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Start page</title>
+    <link rel="stylesheet" href="moonlight.css">
+ </head>
+ <body>
+   <header>
+     <a href="#" class="logo">find me</a>
+       <ul>
+         <li><a href="moonlight.html" class="active">home</a></li>
+         <li><a href="about.html">about</a></li>
+         <li><a href="contactUs.html">contact us</a></li>
+      </ul>
+   </header>  
+   <section>
+    <img src="pic/stars.png" id=""stars>
+    <img src="pic/moon.png" id="moon">
+    <img src="pic/mountains_behind.png" id="mountains_behind">
+    <h2 id="text">  welcome </h2>
+    <a href="next2.html" id="btn"><b>start</b></a>
+    <img src="pic/mountains_front.png" id="mountains_front">
+   </section>
+ </body>
+
+ <script>
+  let stars = document.getElementById('stars');
+  let moon = document.getElementById('moon');
+  let mountains_behind = document.getElementById('mountains_behind');
+  let text = document.getElementById('text');
+  let btn = document.getElementById('btn');
+  let mountains_front = document.getElementById('mountains_front');
+  let headrer = document.querySelector('header');
+
+  window.addEventListener('scroll', function(){
+let value = window.scrollY;
+stars.style.left = value * 0.25 + 'px';
+moon.style.top = value * 1.05 + 'px';
+mountains_behind.style.top = value * 0.5 + 'px';
+mountains_front.style.top = value * 0 + 'px';
+text.style.marginRight = value * 4 + 'px';
+text.style.marginTop = value * 1.5 + 'px';
+header.style.top = value * 0.5 + 'px';
+  })
+
+ </script>
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <title>Sign Up | By Code Info</title>
+     <link rel="stylesheet" href="Css/style.css" />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+       rel="stylesheet"
+     />
+   </head>
+   <body>
+     <div class="signup-box">
+       <h1>Sign Up</h1>
+       <h4>It's free and only takes a minute</h4>
+       <form>
+         <label>First Name</label>
+         <input type="text" placeholder="" />
+         <label>Last Name</label>
+         <input type="text" placeholder="" />
+         <label>Email</label>
+         <input type="email" placeholder="" />
+         <label>Password</label>
+         <input type="password" placeholder="" />
+         <label>Confirm Password</label>
+         <input type="password" placeholder="" />
+         <button type="submit">Submit</button>
+         
+       </form>
+       <p>
+         By clicking the Sign Up button,you agree to our <br />
+         <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+       </p>
+     </div>
+     <p class="para-2">
+       Already have an account? <a href="login.html">Login here</a>
+     </p>
+   </body>
+ </html>
+ 
+
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <title>Login | By Code Info</title>
+ 
+   </head>
+   <body>
+     <div class="login-box">
+       <h1>Login</h1>
+       <form>
+         <label>Email</label>
+         <input type="email" placeholder="hessa2003@icloud.com" />
+         <label>Password</label>
+         <input type="password" placeholder="" />
+         <button type="submit">Submit</button>
+       </form>
+     </div>
+     <p class="para-2">
+       Not have an account? <a href="index.html">Sign Up Here</a>
+     </p>
+   </body>
+ </html>
+ 
+ 
+</body>
+</html>
+

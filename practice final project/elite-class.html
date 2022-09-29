@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elite class</title>
+    <link rel="stylesheet" href="spark.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">find me</a>
+          <ul>
+            <li><a href="index.html" class="active">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contactUs.html">contact us</a></li>
+            <li><a href="wstudy.html">back</a></li>
+         </ul>
+      </header> 
+
+    
+   <!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img class="bigPic" src="pic/elite class.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img class="bigPic"src="pic/Elite Class1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img class="bigPic" src="pic/Elite Class2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img class="bigPic"src="pic/Elite Class3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img class="bigPic"src="pic/Elite Class4.jpg"style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img class="bigPic"src="pic/Elite Class5.jpg" style="width:100%">
+  </div>
+
+  
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="pic/elite class.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic/Elite Class1.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic/Elite Class2.jpg" style="width:100%" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic/Elite Class3.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic/Elite Class4.jpg" style="width:100%" onclick="currentSlide(5)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="pic/Elite Class5.jpg" style="width:100%" onclick="currentSlide(6)" >
+    </div>
+   
+  </div>
+</div>
+
+
+<div class="contact">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-snapchat-ghost"></a>
+
+
+
+<p id="demo"></p>
+
+
+
+
+
+
+
+
+    <script>
+
+const numbers = [4, 9, 16, 25];
+document.getElementById("demo").innerHTML = numbers.map(Math.sqrt);
+
+      let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+    
+</body>
+</html>
